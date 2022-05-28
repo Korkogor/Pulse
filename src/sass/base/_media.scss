@@ -31,6 +31,7 @@
         }
     }
     .promo {
+        background-position: right;
         &__wrapper {
             margin-top: 30px;
         }
@@ -59,4 +60,72 @@
         }
     }
     
+}
+
+@media (max-width: 376px) {
+    .header {
+        &__logo {
+            width: 45%;
+        }
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+    .promo {
+        min-height: 580px;
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__header {
+            font-size: 24px;
+        }
+        &__subheader {
+            font-size: 12px;
+        }
+        &__icons {
+            margin-top: 45px;
+            width: 350px;
+        }
+        &__link {
+            font-size: 13px;
+        }
+    }
+
+    .button_main {
+        width: 278px;
+        height: 38px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 325px) {
+    .header {
+        flex-direction: column;
+        &__logo {
+            width: 60%;
+        }
+        &__official {
+            margin-top: 15px;
+        }
+        &__contacts {
+            margin: 0;
+        }
+    }
+    .promo {
+        &__wrapper {
+            margin-top: 9px;
+        }
+        &__header {
+            font-size: 21px;
+        }
+        &__icons {
+            width: 316px;
+        }
+        &__icon {
+            font-size: 11px;
+        }
+    }
 }
