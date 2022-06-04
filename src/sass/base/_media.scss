@@ -67,6 +67,7 @@
     }
 
     .consultation {
+        min-height: 500px;
         padding: 50px 20px 42px 20px;
         .title {
             font-size: 23px;
@@ -78,6 +79,12 @@
         }
         &__descr {
             font-size: 14px;
+            text-align: center;
+        }
+
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 36px;
         }
     }
     
@@ -147,6 +154,22 @@
         }
         &__icon {
             font-size: 11px;
+        }
+    }
+
+    .consultation {
+        .title_left {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
+
+    .feed-form {
+        width: 95%;
+        .button_submit {
+            font-size: 15px;
         }
     }
 }
