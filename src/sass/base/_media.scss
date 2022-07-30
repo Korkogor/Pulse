@@ -1,4 +1,4 @@
-@media (max-width: 769px) {
+@media (max-width: 992px) {
     .promo {
         padding: 21px 20px 93px 20px;
         &__wrapper {
@@ -16,6 +16,36 @@
         .title {
             font-size: 28px;
         }
+    }
+    
+    .carousel {
+        padding-bottom: 115px;
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 30px 0 0;
+            text-align: center;
+            li {
+                display: inline-block;
+                margin: 0 10px;
+                border: 1px solid transparent;
+                button {
+                    border: none;
+                    border-radius: 100%;
+                }
+            }
+        }
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+    .catalog__content {
+        justify-content: space-evenly;
     }
 }
 
@@ -87,6 +117,23 @@
             margin-top: 36px;
         }
     }
+
+    .carousel {
+        padding-bottom: 50px;
+        &__inner {
+            height: 400px;
+        }
+    }
+
+    .catalog {
+        h2 {
+            font-size: 23px;
+        }
+        &__tab {
+            width: 120px;
+            font-size: 12px;
+        }
+    }
     
 }
 
@@ -126,6 +173,23 @@
         width: 278px;
         height: 38px;
         font-size: 14px;
+    }
+
+    .carousel {
+        padding-bottom: 50px;
+        &__inner {
+            height: 350px;
+        }
+    }
+
+    .catalog {
+        h2 {
+            font-size: 23px;
+        }
+        &__tab {
+            width: 100px;
+            font-size: 10px;
+        }
     }
 }
 
@@ -170,6 +234,16 @@
         width: 95%;
         .button_submit {
             font-size: 15px;
+        }
+    }
+
+    .catalog {
+        h2 {
+            font-size: 19px;
+        }
+        &__tab {
+            width: 78px;
+            font-size: 7px;
         }
     }
 }
