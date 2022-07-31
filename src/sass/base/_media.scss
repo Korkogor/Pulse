@@ -47,6 +47,23 @@
     .catalog__content {
         justify-content: space-evenly;
     }
+
+    .recall {
+        padding: 0px 20px 46px;
+        h2 {
+            font-size: 23px;
+        }
+        .recall-item {
+            img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+            &__title, &__subtitle, &__descr {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media (max-width: 426px) {
@@ -244,6 +261,17 @@
         &__tab {
             width: 78px;
             font-size: 7px;
+        }
+    }
+
+    .recall {
+        h2 {
+            font-size: 19px;
+        }
+        .recall-item {
+            &__title {
+                font-size: 17px;
+            }
         }
     }
 }
