@@ -180,6 +180,14 @@
             display: none;
         }
     }
+
+    #consultation, #order {
+        width: 300px;
+        min-height: 375px;
+        .feed-form {
+            width: 220px;
+        }
+    }
 }
 
 @media (max-width: 376px) {
@@ -300,6 +308,16 @@
             &__title {
                 font-size: 17px;
             }
+        }
+    }
+
+    #consultation, #order {
+        padding: 38px 25px 38px 25px;
+        .feed-form {
+            width: 250px;
+        }
+        .modal__close {
+            display: none;
         }
     }
 }
