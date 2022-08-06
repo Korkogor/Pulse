@@ -3,8 +3,8 @@ $(document).ready(function(){
         speed: 1200,
         autoplay: true,
         // adaptiveHeight: true,
-        prevArrow:'<button type="button" class="slick-prev"><img src="../icons/chevron-left-solid.png"></button>',
-        nextArrow:'<button type="button" class="slick-next"><img src="../icons/chevron-right-solid.png"></button>',
+        prevArrow:'<button type="button" class="slick-prev"><img src="icons/chevron-left-solid.png"></button>',
+        nextArrow:'<button type="button" class="slick-next"><img src="icons/chevron-right-solid.png"></button>',
         responsive: [
             {
                 breakpoint: 992, //от 0 до 768
@@ -96,6 +96,23 @@ $(document).ready(function(){
 
     $('input[name = phone]').mask("+7 (999) 999-99-99");
 
+    
+    //Smooth scroll and pageup
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600){
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    });
+
+    new WOW().init();
   });
 
 
